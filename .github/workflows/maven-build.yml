@@ -29,7 +29,8 @@ jobs:
       if: always()
       with:
         path: target/*.jar
-  
+        retention-days: 30
+
   windows-maven:
     name: Build Windows
     runs-on: windows-latest
@@ -47,6 +48,8 @@ jobs:
       if: always()
       with:
         path: target/*.jar
+        retention-days: 30
+
   dependency-graph:
     name: Dependency Graph
     runs-on: ubuntu-latest
