@@ -9,7 +9,6 @@ on:
 
 jobs:
   build:
-    name: Build ${{ inputs.os }}
     runs-on: ${{ inputs.os }}
     steps:
       - uses: actions/checkout@v3
